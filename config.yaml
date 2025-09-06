@@ -1,0 +1,29 @@
+oanda:
+  env: practice
+  token_env: OANDA_TOKEN
+  account_env: OANDA_ACCOUNT_ID
+
+instruments:
+  - EUR_USD
+
+data:
+  timeframe: H2
+  ema_periods: [10, 20, 50]
+  vwap:
+    mode: intraday
+    window: 20
+
+strategy:
+  entry_gap_pips: 30
+  tp_pips: 25
+  sl_pips: 100
+  units: 1000
+  max_positions: null
+  daily_loss_limit_pips: 100
+
+alerts:
+  telegram:
+    enabled: true
+    bot_token_env: TELEGRAM_BOT_TOKEN
+    chat_id_env: TELEGRAM_CHAT_ID
+    daily_summary_time: "23:59"
