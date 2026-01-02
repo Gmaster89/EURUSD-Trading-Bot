@@ -28,16 +28,7 @@ The bot executes trades on **OANDA** using EMA and VWAP-based strategy logic wit
 
 - **Indicators & Strategy**  
   - EMA (default: 10, 20, 50)  
-  - VWAP (intraday/rolling)  
-  - Configurable candle interval (default: 2H, supports M10, M30, H1, H4)  
-  - Custom strategy rules:  
-    - Long entry if price > VWAP and EMA(10) > EMA(20) > EMA(50)
-    - Short entry is vice versa  
-  - Trade size: default 1000 units (configurable)  
-  - Take Profit (TP): 25 pips  
-  - Stop Loss (SL): 100 pips  
-  - Daily stop-loss cap: 100 pips  
-
+    
 - **Risk Management**  
   - Configurable pip-based TP and SL  
   - Daily loss cap  
